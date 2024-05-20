@@ -19,7 +19,7 @@ class Weapon
     Weapon(int base, int scaling) : weaponBase(base), weaponScaling(scaling) {}
 };
 
-class spell
+class Spell
 {
     public:
       int spellBase;
@@ -86,6 +86,44 @@ class Character
             equippedWeaponIndex = 0;
         }
     }
+    
+     //the weapons. //spell ideas three types earth, fire , summoning
+     
+           //early game
+       Weapon scrappedSteel ()
+       Weapon  aincentSlasher()
+       Weapon hayfork()
+       Weapon primitivePike ()
+       Weapon huntingBow ()
+       Weapon oakBranchLongbow ()
+       Weapon mallet ()
+       Weapon hatchet ()
+       Weapon rustedShiv ()
+       Weapon cursedCane ()
+       Weapon charredTwig()
+       Weapon crackedWand()
+        //mid game weapons
+       Weapon wisdombladeBroadsword ()
+       Weapon embLongsword()
+       Weapon fangedSerpent()
+       Weapon starforgedLance ()
+       Weapon moonshadowBow ()
+       Weapon warstriderLongbow()
+       Weapon CyclopsForgeHammer ()
+       Weapon blacksteelBattleAxe ()
+       Weapon lionsClaws ()
+        //Late game
+       Weapon ()
+       Weapon Longsword ()
+       Weapon posiedensTrident ()
+       Weapon HermesGoldsnspear ()
+       Weapon Composite Bow ()
+       Weapon herculesBow ()
+       Weapon Hammer ()
+       Weapon chronosTimecleaver()
+       Weapon dragonteeth ()
+       Weapon prosymnusFigwoodScepter ()
+    
 
     void equipWeapon(int weaponIndex) {
         if (weaponIndex >= 0 && weaponIndex < weapons.size()) {
@@ -117,12 +155,7 @@ class Character
         cout << "Casting " << spell.name << " for " << totalDamage << " damage!" << endl;
     }
 };
-        
-        class Spell {
-public:
-    string name;
-    int baseDamage;
-    double scalingFactor;
+      
 
     Spell(string spellName, int base, double scaling) 
         : name(spellName), baseDamage(base), scalingFactor(scaling) {}
